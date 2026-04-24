@@ -1,3 +1,10 @@
 body {
     background-color: #8ab9ff;
 }
+h1 {
+    font-family: "nouvelle-vague", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 100px; 
+color: #333;
+}
