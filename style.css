@@ -1,0 +1,9 @@
+body {
+    background-color: #f0f2f5;
+}
+h1:hover {
+    color: #e74c3c;        
+    cursor: pointer;          
+    transform: scale(1.1);    
+    transition: 0.3s;
+}
