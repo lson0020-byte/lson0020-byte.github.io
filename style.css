@@ -1,10 +1,54 @@
 body {
-    background-color: #8ab9ff;
+    background-color: #ffffff;
 }
-h1 {
-    font-family: "nouvelle-vague", sans-serif;
-font-weight: 400;
+div.box {
+    font-family: "feneon-dense-72", sans-serif;
+font-weight: 500;
 font-style: normal;
 font-size: 100px; 
-color: #333;
+color: #011e76;
+margin-top: 100px;
+margin-bottom: auto;
+text-align: center;
+animation:4s 大标题 infinite alternate linear;
+}
+
+
+div.title {
+    font-family: "sofia-pro-narrow-black", sans-serif;
+font-weight: 400;
+font-style: italic;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.content {
+    font-family: "sofia-pro-narrow-black", sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 20px; 
+    color: #333;
+    width: 500px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+div.round {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+@keyframes 大标题{
+    0% {
+        text-shadow: #000000 0px 0px 0px;
+    }
+    100% {
+        text-shadow: #ff0000 0px 0px 5px;
+    }
 }
