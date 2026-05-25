@@ -2,11 +2,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    
 }
 
 body{
-    background:#000000;
+    background:#aeaeae;
     overflow-x:hidden;
 }
 
@@ -142,6 +141,8 @@ font-style: normal;
     width:100%;
 
     padding:100px 80px;
+
+    padding-left:120px;
 }
 
 /* TITLE */
@@ -421,11 +422,22 @@ font-style: normal;
 }
 
 
+
+
+
+
+
+
+
 .planetary-status-section{
     width:100%;
     padding:60px;
     margin-top:80px;
+    padding-left:120px;
 }
+
+
+
 
 
 
@@ -439,6 +451,8 @@ font-style: normal;
     gap:50px;
 
     margin-top:200px;
+
+    padding-left:120px;
 
 
 }
@@ -640,7 +654,8 @@ color:#ffffff;
     width:100%;
     padding:60px;
     margin-top:80px;
-    margin-right:10%;
+    padding-left:120px;
+
 }
 
 .reissue-system{
@@ -673,7 +688,7 @@ color:#ffffff;
 
 .risk-module img{
     width:100%;
-    height:320px;
+    height:360px;
     display:block;
     filter:contrast(1.05);
 }
@@ -695,7 +710,319 @@ font-style: normal;
 }
 
 
+   
+
+
+/* =========================
+NUCLEAR TRANSITION
+========================= */
+
+.fourrisksection{
+
+    position:relative;
+
+    min-height:160vh;
+
+    background:#aeaeae;
+
+    overflow:hidden;
+}
+
+/* BLACK GRADIENT */
+
+.dark-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(174,174,174,0) 0%,
+        rgba(0,0,0,0.2) 30%,
+        rgba(0,0,0,0.7) 60%,
+        #000000 100%
+    );
+}
+
+/* CONTENT */
+
+.nuclear-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 40px;
+}
+
+/* SMALL LABEL */
+
+.risk-category{
+
+    color:rgba(122, 0, 0, 0.429);
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+    margin-bottom:40px;
+
+    font-family:"ellograph-cf", monospace;
+
+    margin-top:120px;
+}
+
+
+.risk-category{
+
+    position:relative;
+
+    display:inline-block;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    color:#8c0000bb;
+
+    font-family:"feneon-dense", sans-serif;
+
+    animation:dissolve 2.8s infinite;
+}
+
+
+@keyframes dissolve{
+
+    0%{
+        opacity:1;
+        transform:translateX(0);
+        filter:blur(0px);
+    }
+
+    20%{
+        opacity:0.85;
+        transform:translateX(-1px);
+    }
+
+    40%{
+        opacity:0.6;
+        filter:blur(1px);
+    }
+
+    50%{
+        opacity:0.3;
+        transform:translateX(2px);
+        filter:blur(2px);
+    }
+
+    60%{
+        opacity:0.8;
+        filter:blur(0.5px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+        filter:blur(0px);
+    }
+}
+
+
+
+/* HUGE TITLE */
+
+.risk-title{
+
+    font-size:30px;
+
+    line-height:0.9;
+
+    color:white;
+
+    letter-spacing:8px;
+
+    margin-bottom:50px;
+
+    position:relative;
+
+    font-family: feneon-dense, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+    text-shadow:0 0 25px rgba(255,255,255,0.15);
+}
+
+/* SIGNAL LINE */
+
+.nuclear-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-10%;
+    bottom:-16px;
+
+    width:120%;
+    height:1px;
+
+    background:rgba(255,255,255,0.2);
+}
+
+/* DESCRIPTION */
+
+.nuclear-description{
+
+    width:520px;
+
+    margin-top:30px;
+
+    margin-bottom:60px;
+
+    color:rgba(255,255,255,0.82);
+
+    font-size:14px;
+
+    line-height:2;
+
+    font-family:"ellograph-cf", monospace;
+}
 
 
 
 
+
+
+
+
+.nuclear-section{
+
+    padding:120px;
+    background:#000;
+    color:#fff;
+}
+
+/* 左上文字 */
+.nuclear-text{
+
+    width:420px;
+    margin-bottom:60px;
+}
+
+.nuclear-text h2{
+
+    font-size:28px;
+    margin-bottom:12px;
+    font-family:"feneon-dense", sans-serif;
+}
+
+.nuclear-text p{
+
+    font-size:14px;
+    line-height:1.8;
+    opacity:0.7;
+    font-family:"ellograph-cf", monospace;
+}
+
+/* 图片区域 */
+.nuclear-grid{
+
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+
+    justify-content:center; 
+
+    align-items:flex-start;
+
+    margin-top:60px;
+}
+
+/* 图片卡片 */
+.nuclear-item{
+
+    width:250px;
+    height:200px;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+
+   
+}
+
+/* 图片本身 */
+.nuclear-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* hover */
+.nuclear-item img:hover{
+
+    transform:scale(1.05);
+}
+
+/* 🎯 关键设计感：轻微“节奏错位”（不是乱跳） */
+
+.nuclear-item:nth-child(2){
+    transform:translateY(20px);
+}
+
+.nuclear-item:nth-child(3){
+    transform:translateY(-10px);
+}
+
+.nuclear-item:nth-child(4){
+    transform:translateY(30px);
+}
+
+
+
+.annotationN{
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+
+    padding:10px;
+
+    font-size:10px;
+
+    color:rgba(255,255,255,0.7);
+
+    font-family:"ellograph-cf", monospace;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        transparent
+    );
+}
+
+.annotationN{
+    opacity:0;
+    transition:0.3s ease;
+}
+
+.nuclear-item:hover .annotationN{
+    opacity:1;
+}
