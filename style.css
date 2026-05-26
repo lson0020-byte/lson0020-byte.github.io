@@ -1341,6 +1341,7 @@ margin-bottom: 40px;
 
     min-height:100vh;
 
+
     padding:160px 0;
 
     display:flex;
@@ -1364,23 +1365,28 @@ margin-bottom: 40px;
 }
 
 .after-heading{
-    margin-top:18px;
 
-    position: relative;
-    font-family: "Courier New", monospace;
-    font-style: italic;
-    font-size: 12px;
-    color: #666;
-    max-width: 260px;
+    margin-top:30px;
+font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    font-family: courier-new, sans-serif;
+font-weight: 700;
+font-style: normal;
+width: 80%;
 }
 
 .after-image{
 
     position:relative;
 
-    width:100%;
+    width:80%;
 
-    margin-top:70px;
+    margin-top:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
 }
 
 .after-image img{
@@ -1389,14 +1395,64 @@ margin-bottom: 40px;
 
     display:block;
 
-    filter:contrast(1.05);
-
-    transition:1s ease;
+    transition:1.2s ease;
 }
 
 .after-image:hover img{
 
-    transform:scale(1.02);
+    filter:brightness(0.45);
+}
+.hover-warning{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:0.8s ease;
+
+    z-index:3;
+}
+.after-image:hover .hover-warning{
+
+    opacity:1;
+}
+.number{
+
+    font-size:120px;
+
+    line-height:1;
+
+    color:white;
+
+    font-family:"feneon-dense", sans-serif;
+
+    opacity:0.9;
+
+    letter-spacing:2px;
+}
+.warning-text{
+
+    margin-top:12px;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    color:white;
+
+    font-family:"ellograph-cf", monospace;
+
+    opacity:0.75;
 }
 
 .system-text{
@@ -1439,19 +1495,88 @@ margin-bottom: 40px;
 
 .final-quote{
 
-    margin-top:90px;
+    margin-top:140px;
 
-    width:500px;
+    width:350px;
 
     font-size:24px;
 
-    line-height:1.8;
+    line-height:1.5;
 
-    color:#8f2e2e;
+    color:#000000;
 
     opacity:0.75;
 
-    letter-spacing:0.5px;
+    letter-spacing:1px;
 
     font-family:"feneon-dense", sans-serif;
+
+    margin-bottom:-40px;
+
+        font-style: italic;
+
+
+    
 }
+
+
+
+
+/* 核心容器：4列网格，上下留出超大呼吸感间距 */
+.lw-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px 45px; /* 80px 的上下间距创造视觉画册感 */
+    padding: 100px 60px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/* 单个卡片基础样式 */
+.lw-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.lw-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0; /* 让文字和图片之间有固定的小空隙 */
+}
+
+/* 小数字编号 */
+.lw-num {
+    font-family: "ellograph-cf", monospace;
+    font-size: 11px;
+    color: #999;
+}
+
+/* 注释文本 */
+.lw-text {
+    font-family: "ellograph-cf", monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+/* 注释里大写的关键词标签 */
+.lw-text strong {
+    font-family: "feneon-dense", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+/* ===================================================
+   🎯 核心：5个盒子的不规则错落排布（直接控制列定位）
+=================================================== */
+.box-1 { grid-column: 1 / 2; } 
+.box-2 { grid-column: 3 / 4; margin-top: -30px; } /* 往上提一点，打破死板 */
+.box-3 { grid-column: 2 / 3; margin-top: 20px; }  /* 居中错开 */
+.box-4 { grid-column: 4 / 5; } 
+.box-5 { grid-column: 3 / 4; margin-top: 40px; }  /* 在右侧下方收尾 */
