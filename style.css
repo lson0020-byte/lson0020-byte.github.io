@@ -12,19 +12,13 @@ body{
 
 .right-panel{
     position:fixed;
-
     right:-10px;
     top:85%;
-
     transform:translateY(-50%);
-
     width:500px;
     height:500px;
-
     z-index:99999;
     pointer-events:none;
-
-
 }
 
 .clock-container{
@@ -35,30 +29,21 @@ body{
 
 .clock-face{
     position:absolute;
-
     width:100%;
     height:100%;
-
     object-fit:contain;
-
     animation:rotateReverse 40s linear infinite;
 }
 
 .clock-pointer{
     position:absolute;
-
     width:50%;
     height:50%;
-
     left:48%;
     top:55%;
-
     object-fit:contain;
-
     transform:translate(-50%, -50%);
-
     transform-origin:center center;
-    
 }
 
 @keyframes rotateReverse{
@@ -128,12 +113,9 @@ body{
     font-family: "feneon-dense", sans-serif;
     font-size: 80px;
     line-height: 0.82;
-   
     color: #8c0000; 
-    
     letter-spacing: 6px;
     margin-bottom: 70px;
-
     animation: trackingAndColorIn 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -163,27 +145,16 @@ body{
     }
 }
 
-
-
-
-/* SECTION */
-
 .section1{
     width:100%;
-
     padding:100px 80px;
-
     padding-left:120px;
     
 }
 
-/* TITLE */
-
 .content-side{
     margin-bottom:100px;
 }
-
-/* ROWS */
 
 .row1,
 .row2{
@@ -198,28 +169,19 @@ body{
     margin-bottom:140px;
 }
 
-/* TEXT */
-
 .content,
 .content2{
 
     font-family: ellograph-cf, monospace;
 font-weight: 400;
 font-style: normal;
-
     width:500px;
-
     font-size:13px;
     line-height:1.8;
-
     color:#000000;
-
     border-top:1px solid rgba(255,255,255,0.4);
-
     padding-top:20px;
 }
-
-/* IMAGES */
 
 .image1,
 .image2{
@@ -245,8 +207,6 @@ font-style: normal;
 
 }
 
-/* IMAGE STYLE */
-
 .image1 img,
 .image2 img{
     width:100%;
@@ -261,25 +221,16 @@ font-style: normal;
 .image1 img:hover,
 .image2 img:hover{
     transform:scale(1.02);
-
     opacity:1;
 }
 
-/* ANNOTATION */
-
 .annotation{
     margin-top:12px;
-
     font-size:11px;
-
     line-height:1.6;
-
     color:rgba(64, 64, 64, 0.65);
-
     border-top:1px solid rgba(255,255,255,0.2);
-
     padding-top:10px;
-
     font-family:"ellograph-cf", monospace;
 }
 
@@ -289,32 +240,21 @@ font-style: normal;
 
 .sidebar{
   position:relative;
-
   width:420px;
   height:100vh;
-
   display:flex;
   flex-direction:column;
   justify-content:center;
-
   padding-left:80px;
-
   margin-top:200px;
 }
 
 
-
-/* menu */
-
 .menu-item{
   position:relative;
-
   margin:18px 0;
-
   transition:0.4s ease;
 }
-
-/* 半圆 hierarchy */
 
 .item-1{
   margin-left:0px;
@@ -340,8 +280,6 @@ font-style: normal;
   margin-left:35px;
 }
 
-/* text */
-
 .menu-item h2{
     font-family: feneon-dense, sans-serif;
 font-weight: 400;
@@ -349,7 +287,6 @@ font-style: normal;
   font-size:20px;
   color:#5f0000;
   width:400px;
-
   line-height:1.1;
 }
 
@@ -359,41 +296,24 @@ font-style: normal;
   font-family: courier-new, sans-serif;
 font-weight: 700;
 font-style: italic;
-
   font-size:12px;
-
   opacity:0.5;
-
   letter-spacing:0.5px;
 }
 
-/* hover */
 
 .menu-item:hover{
   transform:translateX(12px);
 }
 
-
-
-
-
-
-
-
-
 .fixed-video-container{
 
     position:fixed;
-
     top:30px;
     left:30px;
-
     width:140px;
-
     z-index:9999;
-
     border:2px solid black;
-
     transition:0.3s;
 }
 
@@ -434,26 +354,12 @@ font-style: normal;
     100%{opacity:1;}
 }
 
-
-
-
-
-
-
-
-
 .planetary-status-section{
     width:100%;
     padding:60px;
     margin-top:80px;
     padding-left:120px;
 }
-
-
-
-
-
-
 
 .New-clock-section{
 
@@ -466,8 +372,6 @@ font-style: normal;
     margin-top:200px;
 
     padding-left:120px;
-
-
 }
 
 .content-side{
@@ -482,38 +386,24 @@ font-style: normal;
     font-weight: 500;
     font-style: normal;
     word-spacing: 8px;
-
-    /* 🎯 新增：一层柔和的红色氛围光晕 */
     text-shadow: 0 0 4px rgba(148, 0, 0, 0.35); 
 }
 
 .sub-heading{
-    
-
     font-size:18px;
-
     margin-bottom:30px;
-    
     color:#878787;
-
     font-family: courier-new, sans-serif;
 font-weight: 700;
 font-style: italic;
 
-
 }
 
 .body-text{
-
-
     width:500px;
-
     line-height:1.6;
-    
     letter-spacing: 0.4px;
-
     margin-bottom:60px;
-
     color:#000000;
     font-family: ellograph-cf, monospace;
 font-weight: 400;
@@ -522,15 +412,10 @@ font-style: normal;
 }
 
 .grid-details{
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:80px;
-
     color:#000000;
-
     margin-top:220px;
 }
 
@@ -546,7 +431,6 @@ font-style: normal;
 .detail-item{
 
     max-width:420px;
-
     font-family: ellograph-cf, monospace;
 font-weight: 400;
 font-style: normal;
@@ -556,22 +440,15 @@ font-style: normal;
 }
 
 .image-side{
-
     width:300px;
-
     display:flex;
     flex-direction:column;
-
     gap:30px;
 }
-
-/* NEW */
 
 .image-block{
     width:100%;
 }
-
-/* ONLY IMAGE */
 
 .image-wrapper{
 
@@ -586,13 +463,9 @@ font-style: normal;
 
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     display:block;
 }
-
-/* annotation */
 
 .annotation2{
 
@@ -614,7 +487,6 @@ font-style: italic;
 color:#232323;
 }
 
-/* ROW */
 
 .row3{
 
@@ -627,8 +499,6 @@ color:#232323;
     margin-top:80px;
 }
 
-/* TEXT */
-
 .body-text{
 
     width:500px;
@@ -638,14 +508,10 @@ color:#232323;
     line-height:1.8;
 }
 
-/* IMAGE */
-
 .image3{
 
     width:430px;
 }
-
-/* IMAGE STYLE */
 
 .image3 img{
 
@@ -653,8 +519,6 @@ color:#232323;
 
     object-fit:cover;
 }
-
-/* ANNOTATION */
 
 .annotation{
 
@@ -666,13 +530,6 @@ color:#232323;
 
     opacity:0.6;
 }
-
-
-
-
-
-
-
 
 *{
     box-sizing:border-box;
@@ -738,14 +595,6 @@ font-style: normal;
     letter-spacing: 1px;
 }
 
-
-   
-
-
-/* =========================
-NUCLEAR TRANSITION
-========================= */
-
 .fourrisksection{
 
     position:relative;
@@ -757,7 +606,6 @@ NUCLEAR TRANSITION
     overflow:hidden;
 }
 
-/* BLACK GRADIENT */
 
 .dark-overlay{
 
@@ -773,8 +621,6 @@ NUCLEAR TRANSITION
         #000000 100%
     );
 }
-
-/* CONTENT */
 
 .nuclear-wrapper{
 
@@ -797,26 +643,20 @@ NUCLEAR TRANSITION
     padding:0 40px;
 }
 
-/* SMALL LABEL */
-
 
 
 
 .risk-category {
-    /* 1. 结构与布局 */
     position: relative;
     display: inline-block;
     margin-top: 50px;        
     margin-bottom: 25px;     
-
     font-family: "ellograph-cf", monospace; 
     font-size: 14px;                      
     text-transform: uppercase;            
     letter-spacing: 3px;                  
     line-height: 1.5;
-
     color: #8c0000; 
-
     animation: dissolve 2.8s infinite;
 }
 
@@ -858,11 +698,6 @@ NUCLEAR TRANSITION
 }
 
 
-
-
-
-/* SIGNAL LINE */
-
 .nuclear-title::after{
 
     content:"";
@@ -878,7 +713,6 @@ NUCLEAR TRANSITION
     background:rgba(255,255,255,0.2);
 }
 
-/* DESCRIPTION */
 
 .nuclear-description{
 
@@ -898,12 +732,6 @@ NUCLEAR TRANSITION
 }
 
 
-
-
-
-
-
-
 .fourrisksection{
 
     padding:120px;
@@ -911,7 +739,6 @@ NUCLEAR TRANSITION
     margin-bottom:80px;
 }
 
-/* 左上文字 */
 .nuclear-text{
 
     width:420px;
@@ -933,7 +760,6 @@ NUCLEAR TRANSITION
     font-family:"ellograph-cf", monospace;
 }
 
-/* 图片区域 */
 .nuclear-grid{
 
     display:flex;
@@ -947,18 +773,13 @@ NUCLEAR TRANSITION
     margin-top:60px;
 }
 
-/* 图片卡片 */
 .nuclear-item{
-
     width:250px;
     height:200px;
-
     position:relative;
     overflow:hidden;
-   
 }
 
-/* 图片本身 */
 .nuclear-item img{
 
     width:100%;
@@ -971,13 +792,10 @@ NUCLEAR TRANSITION
     transition:transform 0.4s ease;
 }
 
-/* hover */
 .nuclear-item img:hover{
 
     transform:scale(1.05);
 }
-
-/* 🎯 关键设计感：轻微“节奏错位”（不是乱跳） */
 
 .nuclear-item:nth-child(2){
     transform:translateY(20px);
@@ -1024,17 +842,6 @@ NUCLEAR TRANSITION
 
 
 
-
-
-
-
-
-
-
-/* ==============================
-   DIGITAL SECTION
-============================== */
-
 .digital-section{
 
     width:100%;
@@ -1048,20 +855,10 @@ NUCLEAR TRANSITION
 }
 
 
-/* 主容器 */
-
 .digital-wrapper{
 
     width:520px;
 }
-
-
-/* 小标题 */
-
-
-
-
-/* 文字 */
 
 .digital-description{
 
@@ -1078,9 +875,6 @@ NUCLEAR TRANSITION
     text-align:left;
 }
 
-
-/* 第一段 */
-
 .top-text{
 
     width:340px;
@@ -1089,7 +883,6 @@ NUCLEAR TRANSITION
 }
 
 
-/* 图片 */
 
 .digital-image{
 
@@ -1099,7 +892,6 @@ NUCLEAR TRANSITION
 }
 
 
-/* 图片本身 */
 
 .digital-image img{
 
@@ -1111,29 +903,16 @@ NUCLEAR TRANSITION
 }
 
 
-/* 第二段 */
-
 .bottom-text{
 
     width:320px;
     margin-left:50px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .biological-section{
     padding:100px 60px;
 }
 
-/* 2×2布局 + 居中 */
 .bio-grid{
     display:grid;
     grid-template-columns:repeat(2, 230px);
@@ -1141,7 +920,7 @@ NUCLEAR TRANSITION
     margin-left:160px;
 }
 
-/* 正方形 box */
+
 .bio-box {
     aspect-ratio: 1 / 0.4;
     padding: 20px;
@@ -1155,21 +934,18 @@ NUCLEAR TRANSITION
 }
 
 .bio-box:hover {
-    background: #f2675da9; /* 恢复成你原本的红色深度 */
-    transform: translateY(-2px); /* 顺便让它微微上浮一下，更有点击感 */
+    background: #f2675da9; 
+    transform: translateY(-2px); 
 }
 
-/* 标题 */
 .bio-box summary{
     list-style:none;
 }
 
-/* 去箭头 */
 .bio-box summary::-webkit-details-marker{
     display:none;
 }
 
-/* 内容 */
 .bio-box p{
     font-size:12px;
     margin-top:10px;
@@ -1205,15 +981,6 @@ font-style: normal;
 }
 
 
-
-
-
-
-
-
-
-
-/* --- 基础大框架 --- */
 .environment-section {
     background-color: #fcfaf6;
     padding: 100px 60px;
@@ -1225,7 +992,7 @@ font-style: normal;
     margin-bottom:80px;
 }
 
-/* --- 文字区域 --- */
+
 .environment-header {
     grid-column: 4 / 9;
     grid-row: 2;
@@ -1244,9 +1011,8 @@ margin-top: 20px;
 margin-bottom: 40px;
 }
 
-/* --- 图片基础样式 --- */
 .item {
-    position: relative; /* 为内部的 .note 提供定位基准 */
+    position: relative; 
     display: inline-block;
 }
 .item img {
@@ -1254,7 +1020,6 @@ margin-bottom: 40px;
     display: block;
 }
 
-/* --- 标注文字（.note）基础样式与引线 --- */
 .note {
     position: absolute;
     font-family: "Courier New", monospace;
@@ -1264,7 +1029,7 @@ margin-bottom: 40px;
     max-width: 260px;
     overflow-wrap: break-word; 
 }
-/* 通用引线样式：利用 before 伪元素画一条细线 */
+
 .note::before {
     content: '';
     position: absolute;
@@ -1274,62 +1039,46 @@ margin-bottom: 40px;
 }
 
 
-/* -----------------------------------------
-   核心简化：用数字类名同时控制【图片位置】和【标注位置】
--------------------------------------------- */
-
-/* 1️⃣ 图片 1（在图片下方）：间距加到 45px，线长 45px */
 .item-1 { grid-column: 1 / 4; grid-row: 1; transform: translateY(20px); }
 .item-1 .note { 
-    top: calc(100% + 45px);    /* 👈 文字顶端距离图片底部 45px (绝对不重叠) */
+    top: calc(100% + 45px);    
     left: 10px; 
 }
 .item-1 .note::before { 
-    bottom: 100%;              /* 线条从文字顶部出发 */
+    bottom: 100%;            
     left: 15px; 
-    height: 45px;              /* 👈 引线长度，跟上面的间距保持一致 */
+    height: 45px;            
 }
 
-/* 2️⃣ 图片 2（在图片下方）：间距加到 45px，线长 45px */
 .item-2 { grid-column: 5 / 8; grid-row: 1; }
 .item-2 .note { 
-    top: calc(100% + 45px);    /* 👈 间距 */
+    top: calc(100% + 45px);   
     left: 50px; 
 }
 .item-2 .note::before { 
     bottom: 100%; 
     left: 5px; 
-    height: 45px;              /* 👈 线长 */
+    height: 45px;             
 }
 
-/* 3️⃣ 图片 3（在图片上方）：间距加到 45px，线长 45px */
 .item-3 { grid-column: 2 / 5; grid-row: 3; }
 .item-3 .note { 
-    bottom: calc(100% + -290px); /* 👈 文字底端距离图片顶部 45px (往上生长) */
+    bottom: calc(100% + -290px); 
     right: 20px; 
 }
 .item-3 .note::before { 
     bottom: 100%; 
     right: 15px; 
-    height: 45px;              /* 👈 线长 */
+    height: 45px;            
 }
 
-/* 4️⃣ 图片 4（在图片上方，无引线）：纯文字间距调整 */
 .item-4 { grid-column: 9 / 13; grid-row: 2 / 4; }
 .item-4 .note { 
-    bottom: calc(100% + 25px); /* 👈 距离图片顶部 25px */
+    bottom: calc(100% + 25px); 
     left: 50%; 
     transform: translateX(-50%); 
 }
-.item-4 .note::before { display: none; } /* 保持隐藏引线 */
-
-
-
-
-
-
-
-
+.item-4 .note::before { display: none; } 
 
 
 
@@ -1338,7 +1087,6 @@ margin-bottom: 40px;
     width:100%;
 
     min-height:100vh;
-
 
     padding:160px 0;
 
@@ -1513,24 +1261,19 @@ width: 80%;
 
         font-style: italic;
 
-
     
 }
 
 
-
-
-/* 核心容器：4列网格，上下留出超大呼吸感间距 */
 .lw-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 45px; /* 80px 的上下间距创造视觉画册感 */
+    gap: 80px 45px; 
     padding: 100px 60px;
     margin-left: 110px;
     margin-right: 110px;
 }
 
-/* 单个卡片基础样式 */
 .lw-box {
     display: flex;
     flex-direction: column;
@@ -1541,17 +1284,15 @@ width: 80%;
     width: 100%;
     height: auto;
     display: block;
-    margin: 12px 0; /* 让文字和图片之间有固定的小空隙 */
+    margin: 12px 0;
 }
 
-/* 小数字编号 */
 .lw-num {
     font-family: "ellograph-cf", monospace;
     font-size: 11px;
     color: #999;
 }
 
-/* 注释文本 */
 .lw-text {
     font-family: "ellograph-cf", monospace;
     font-size: 11px;
@@ -1560,7 +1301,6 @@ width: 80%;
     margin: 0;
 }
 
-/* 注释里大写的关键词标签 */
 .lw-text strong {
     font-family: "feneon-dense", sans-serif;
     font-size: 16px;
@@ -1570,14 +1310,11 @@ width: 80%;
     margin-bottom: 4px;
 }
 
-/* ===================================================
-   🎯 核心：5个盒子的不规则错落排布（直接控制列定位）
-=================================================== */
 .box-1 { grid-column: 1 / 2; } 
-.box-2 { grid-column: 3 / 4; margin-top: -30px; } /* 往上提一点，打破死板 */
-.box-3 { grid-column: 2 / 3; margin-top: 20px; }  /* 居中错开 */
+.box-2 { grid-column: 3 / 4; margin-top: -30px; } 
+.box-3 { grid-column: 2 / 3; margin-top: 20px; } 
 .box-4 { grid-column: 4 / 5; } 
-.box-5 { grid-column: 3 / 4; margin-top: 40px; }  /* 在右侧下方收尾 */
+.box-5 { grid-column: 3 / 4; margin-top: 40px; }  
 
 .lw-intro-p{
     font-size: 15px;
@@ -1590,11 +1327,53 @@ font-style: normal;
     width: 80%;
 }
 .lw-intro {
-    /* 🎯 核心修改：让文字霸占左边的两列，刚好顶在第五张图（第3列）的左边 */
     grid-column: 1 / 3;       
+    padding-right: 40px;      
+    align-self: center;      
+    margin-bottom: 0;        
+}
 
-    /* 💡 细节优化： */
-    padding-right: 40px;      /* 给右边的第五张图片留出一点呼吸空隙 */
-    align-self: center;       /* 让文字在垂直方向上和右边的图片居中对齐，排版更高级 */
-    margin-bottom: 0;         /* 既然已经是并排了，删掉之前的底部大间距 */
+.cp-section {
+    border-top: 2px solid rgba(255, 169, 169, 0.552); 
+    padding: 80px 60px 40px 60px; 
+}
+
+.cp-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+    margin-bottom: 60px; 
+}
+
+.cp-col {
+    display: flex;
+    flex-direction: column;
+}
+.cp-label {
+    font-family: "feneon-dense", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #8c0000; 
+    margin-bottom: 15px;
+}
+
+.cp-data {
+    font-family: "ellograph-cf", monospace;
+    font-size: 11px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.5); 
+    margin: 0;
+}
+.cp-bottom {
+    text-align: left;
+    border-top: 1px solid rgba(0, 0, 0, 0.04); 
+    padding-top: 25px;
+}
+
+.cp-copyright {
+    font-family: "ellograph-cf", monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 0;
 }
